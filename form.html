@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PERSONAL DATA FORM </title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- cdn link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .container {
+        width: 50%;
+    }
+    .box{
+        border: 1px solid black;
+        height: 25px;
+        width: 242px;
+        
+    }
+    .textarea{
+        border: 2px solid black;
+        width: 130px;
+        height: 170px;
+    }
+    .data{
+        border: 1px solid black;
+        width: 190px;
+        height: 20px;
+    }
+
+    .box2{
+     border: 1px solid black;
+     height: 25px;
+
+ }
+
+ .box6{
+    border: 1px solid black;
+    height: 60px;
+}
+.six{
+   border: 1px solid black;
+   height: 20px; 
+}
+.to_be{
+    font-size: 20px;
+}
+.hide {
+  display: none;
+}
+
+.form-control{
+    border: 0;
+}
+</style>
+<script type="text/javascript">
+    $('#imageUpload').change(function() {
+      readImgUrlAndPreview(this);
+
+      function readImgUrlAndPreview(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function(e) {
+            $('#imagePreview').removeClass('hide').attr('src', e.target.result);
+        }
+    };
+    reader.readAsDataURL(input.files[0]);
+}
+});
+</script>
+</head>
+<body style="background: darkgray">
+
+  <div class="container bg-white">
+    <h3
+    style="text-align: center; padding-top: 20px;  font-size: 30px; font-weight: 700;font-family:' sans-serif;'"
+    >
+    PERSONAL DATA FORM &nbsp; &nbsp; &nbsp; &nbsp; <spam style="font-size:15px; font-weight:900;"><b>Sr. No.....</b></spam>
+
+    <div class="row"style="padding:15px 0px 0px 50px;">
+        <table>
+            <tr>
+                <td style="font-size: 15px;"><span>Course&nbsp;Name</span></td>
+                <td style="width: 100%;"><input type="text" class="form-control shadow-none" style="width: 300px; border-bottom: 2px dotted; "></td>        
+            </tr>           
+        </table>
+    </div>
+
+    <div class="to_be" style="padding-top: 15px;"><p>To be filled by Candidate ( उम्मीदवार द्वारा भरा जाना है )<br>All filled are mandatory. Strike off whichever is not applicable</p></div>
+
+    <div class="row" style="padding:0px 0px 0px 50px;">
+
+
+
+        <table>
+            <tr>
+                <td style="font-size: 15px;"><span>Name&nbsp;(नाम)</span></td>
+                <td style="width: 100%;"><input type="text" class="form-control shadow-none" style="width: 560px; border-bottom: 2px dotted; "></td>        
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td style="font-size: 15px;"><span>Father’s&nbsp;Name&nbsp;(पिता&nbsp;का&nbsp;नाम)</span></td>
+                <td style="width: 100%;"><input type="text" class="form-control shadow-none" style="width: 450px; border-bottom: 2px dotted; "></td>        
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td style="font-size: 15px;"><span>Mother’s&nbsp;Name&nbsp;(माता&nbsp;का&nbsp;नाम)</span></td>
+                <td style="width: 100%;"><input type="text" class="form-control shadow-none" style="width: 447px; border-bottom: 2px dotted; "></td>        
+            </tr>
+        </table>
+         <table>
+            <tr>
+                <td style="font-size: 15px;"><span>Gender&nbsp;&nbsp;(लिंग&nbsp;)</span></td>
+                <td style="width: 100%;"><input type="text" class="form-control shadow-none" style="width: 550px; border-bottom: 2px dotted; "></td>        
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td style="font-size: 15px;"><span>Nationality&nbsp;&nbsp;(राष्ट्रीयता&nbsp;)</span></td>
+                <td style="width: 100%;"><input type="text" class="form-control shadow-none" style="width: 500px; border-bottom: 2px dotted; "></td>        
+            </tr>
+        </table>
+
+       
+    </div>
+
+
+
+
+
+    <!-- form section start -->
+
+    <div class="row" style="padding:10px 0px 0px 35px;">            
+        <div class="col-sm-4" >                
+            <div class="box">
+                <p style="font-size:12px; font-weight: 700; padding:5px;"></p>
+            </div>
+            <div class="box">
+                <p style="font-size:14px; font-weight: 700;  padding:5px;">H. No / Street Name( हो0 नं0 )</p>
+            </div>
+            <div class="box">
+                <p style="font-size:14px; font-weight: 700;  padding:5px;">Village / Mohalla( गाँव ) 
+                </p>
+            </div>
+            <div class="box">
+                <p style="font-size:14px; font-weight: 700;  padding:5px;">Post Office & Tehsil( तहसील )</p>
+            </div>                                   
+            <div class="box">
+               <p style="font-size:14px; font-weight: 700;  padding:5px;">Distt. & State(जिला)</p>
+           </div>
+           <div class="box">
+            <p style="font-size:14px; font-weight: 700;  padding:5px;">Pin Code(पिन)</p>
+        </div>
+        <div class="box">
+            <p style="font-size:14px; font-weight: 700; padding:5px;">Tel No. / Mob. No( मो0 नं0 )</p>
+        </div>
+   <!--  <div class="box">
+        <p style="font-size:12px; font-weight: 500; padding: 0px 0px 0px 5px;">Pin Code</p>
+    </div> -->
+    <div class="box-code" style="border:1px solid black; width: 241px; height: 50px;">
+        <p style="font-size:14px; font-weight: 700; padding: 5px;">Emergency Contact No.( आपातकालीन संपर्क नंबर)</p>
+    </div>
+</div>
+<!-- ============================================== -->
+
+<!-- ===================================================== -->
+<div class="col-sm-4">
+    <div class="box">
+        <p style="font-size:14px; font-weight: 700; padding: 5px;">Present Address( स्थाई पता)</p>
+    </div>
+    <div class="box">
+        <p style="font-size:12px; font-weight: 700; ">
+            <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+        </p>
+    </div>
+    <div class="box">
+        <p style="font-size:12px; font-weight: 700;">
+            <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+        </p>
+    </div>
+    <div class="box">
+        <p style="font-size:12px; font-weight: 700; ">
+            <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+        </p>
+    </div>
+    <div class="box">
+        <p style="font-size:12px; font-weight: 700; ">
+            <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+        </p>
+    </div>
+    <div class="box">
+        <p style="font-size:12px; font-weight: 700; ">
+            <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+        </p>
+    </div>
+    <div class="box">
+        <p style="font-size:12px; font-weight: 700;">
+            <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+        </p>
+    </div>
+    <div class="box">
+        <p style="font-size:12px; font-weight: 700; ">
+            <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+        </p>
+    </div>
+    <div class="box">
+        <p style="font-size:12px; font-weight: 700; ">
+            <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 4px; border-radius: 0px; line-height: normal;">
+        </p>
+    </div>
+    
+</div>
+<!-- ==================================================== -->
+<div class="col-sm-4">
+    <div style="padding: 20px;">
+        <div class="textarea">
+            <p style="font-size:12px; font-weight: 500; padding: 40px 0px 0px 5px;">
+                <input type="file" name="imageUpload" id="imageUpload" class="hide" />
+                <label for="imageUpload" class="btn btn-large">Affix Recent Passport Size Color Photograp</label> </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- =====================Seconde Table Start================================= -->
+
+
+<div><p style="font-size:15px; font-weight:700; text-align:center;">PERSONAL DATA </p></div>
+
+
+
+<div class="row"style="padding:0px 0px 0px 35px;">                  
+    <div class="col-sm-2">                
+        <div class="barth" style="width:122px; height: 40px; border: 1px solid black; padding:5px;">
+            <p style="font-size:14px; font-weight: 700;  text-align:center;">Date of Birth(जन्म तिथि)</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <p style="border:1px solid black; font-size: 14px; height: 38px; width:42px; margin:0 auto;">Date</p>
+            </div>
+            <div class="col-sm-4">
+                <p style="border:1px solid black; font-size: 14px; height: 38px; width:42px; margin:0 auto;">Month</p>            
+            </div>
+            <div class="col-sm-4">
+                <p style="border:1px solid black;font-size: 14px; height: 38px;  width:42px; margin:0 auto;">Year</p>             
+            </div>
+            <div class="col-sm-4">
+                <p style="border:1px solid black;  width:42px; margin:0 auto;height: 37px;">
+                 <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 0px; border-radius: 0px; line-height: normal;">
+             </p>             
+         </div>
+         <div class="col-sm-4">
+            <p style="border:1px solid black; text-align: center; width:42px; margin:0 auto;height: 37px;">
+             <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 0px; border-radius: 0px; line-height: normal;">
+         </p>             
+     </div>
+     <div class="col-sm-4">
+        <p style="border:1px solid black;  width:42px;margin:0 auto; height: 37px;">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 0px; border-radius: 0px; line-height: normal;">
+     </p>             
+ </div>
+</div>
+
+</div>
+<div class="col-sm-2">                
+    <div class="place" style="width:122px; height:40px; border: 1px solid black; ">
+        <p style="font-size:15px; font-weight: 700; padding:2px; ">Place of Birth (जन्म स्थान) </p>
+    </div>
+    <div class="box2" style="width:122px;">
+        <p style="font-size:15px; font-weight: 700; padding:5px; text-align:center;">Weight (Kg.)</p>
+    </div>
+    <div class="box2" style="width:122px;">
+        <p style="font-size:15px; font-weight: 700; padding: 5px;">Domicile State</p>
+    </div>
+    <div class="box2" style="width:122px;">
+        <p style="font-size:12px; font-weight: 500;  text-align:center;">
+         <input type="text" name="" style="width: 100%; border: none; height:22px; padding: 0px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+    <!-- <div class="col-sm-2">                
+        <div class="box2" style="width:122px; height:115px;">
+            <p style="font-size:15px; font-weight: 700; padding: 5px; text-align: center;">Home town </p>
+        </div>
+    </div> -->
+    <div class="col-sm-8">                
+        <div class="Physical" style="width:402px; height: 40px; border:1px solid black;">
+            <p style="font-size:15px; font-weight: 700;padding: 5px;">Physical</p>     
+        </div>
+        <div class="row" style="padding: 0px 0px 0px 17px;">
+            <div class="Physical">
+                <p style="border: 1px solid black; text-align: center; width: 100px;height: 35px; font-size: 14px; font-weight: 700; margin:0 auto; padding: 5px;">Age(Years)</p>
+            </div>
+            <div class="Physical">
+                <p style="border: 1px solid black; text-align: center; width: 100px;height: 35px; font-size: 14px; font-weight: 700; margin:0 auto; padding: 5px;">Height(cm)</p>
+            </div>
+            <div class="Physical">
+                <p style="border: 1px solid black; text-align: center; width: 100px;height: 35px; font-size: 14px; font-weight: 700; margin:0 auto; padding: 5px;">Weight(kg)</p>
+            </div>
+            <div class="Physical">
+                <p style="border: 1px solid black; text-align: center; width: 100px;height: 35px; font-size: 14px; font-weight: 700; margin:0 auto; padding: 2px;">Blood group</p>
+            </div>
+            <div class="Physical">
+                <p style="border: 1px solid black; text-align: center; width: 100px; font-size: 12px; font-weight: 700; margin:0 auto; height: 40px;">
+                 <input type="text" name="" style="width: 100%; border: none; height:38px; border-radius: 0px; line-height: normal;">
+             </p>
+         </div>
+         <div class="Physical">
+            <p style="border: 1px solid black; text-align: center; width: 100px; font-size: 14px; font-weight: 500; margin:0 auto; height: 40px;">
+             <input type="text" name="" style="width: 100%; border: none; height:38px; padding: 5px; border-radius: 0px; line-height: normal;">
+         </p>
+     </div>
+     <div class="Physical">
+        <p style="border: 1px solid black; text-align: center; width: 100px; font-size: 14px; font-weight: 700; margin:0 auto; height: 10px;">
+         <input type="text" name="" style="width: 100%; border: none; height:38px; padding: 5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+ <div class="Physical">
+    <p style="border: 1px solid black; text-align: center; width: 100px; font-size: 14px; font-weight: 700; margin:0 auto; height: 40px;">
+     <input type="text" name="" style="width: 100%; border: none; height:38px; padding: 5px; border-radius: 0px; line-height: normal;">
+ </p>
+</div>
+<!-- Add more physical attributes as needed -->
+</div> 
+</div>
+</div>
+
+
+
+<!-- ==================================Third Table Start=================================== -->
+
+
+<div class="row"style="padding:0px 0px 0px 47px;">                  
+    <div class="card" >                
+        <div class="adhar" style="width:161px; height: 40px; border: 1px solid black;">
+            <p style="font-size:15px; font-weight: 700; padding: 0px 0px 0px 5px;">Aadhar Card Number<br>     आधार कार्ड नंबर </p>
+        </div>
+    </div>
+    <div class="adhar">                
+        <div class="box2" style="width:161px;height: 40px; border: 1px solid black;">
+            <p style="font-size:15px; font-weight: 700; padding: 0px 0px 0px 5px;"></p>
+        </div>
+    </div>
+    <div class="adhar">                
+        <div class="box2" style="width:161px;height: 40px; border: 1px solid black;">
+            <p style="font-size:15px; font-weight: 700; padding: 0px 0px 0px 5px;">Pan Card Number<br>पैन कार्ड नंबर</p>
+        </div>
+    </div>
+    <div class="adhar">                
+        <div class="box2" style="width:161px;height: 40px; border: 1px solid black;">
+            <p style="font-size:15px; font-weight: 700; padding: 0px 0px 0px 5px;"></p>
+        </div>
+    </div>
+</div>
+
+
+<!-- ================================================================================================= -->
+
+<div class="row" style="padding:0px 0px 0px 47px;">                  
+    <div class="Marital" >                
+        <div class="box2" style="width:215px;">
+            <p style="font-size:14px; font-weight: 700; padding: 5px;">Religion (धर्म):</p>
+        </div>
+    </div>
+    <div class="Marital">                
+        <div class="box2" style="width:215px;">
+            <p style="font-size:14px; font-weight: 700; padding:5px;">Marital status (वैवािहक İ̾थित):</p>
+        </div>
+    </div>
+    <div class="Marital">                
+        <div class="box2" style="width:215px;">
+            <p style="font-size:14px; font-weight: 700; padding: 5px;">Mother tongue (मातृ-भाषा):</p>
+        </div>
+    </div>    
+</div>
+
+<!-- =================================================================================== -->
+
+<div class="row" style="padding:0px 0px 0px 47px;">                  
+    <div class="Cast" >                
+        <div class="box2" style="width:215px;">
+            <p style="font-size:14px; font-weight: 700; padding:5px;">Cast (जाति):</p>
+        </div>
+    </div>
+    <div class="Cast">                
+        <div class="box2" style="width:215px;">
+            <p style="font-size:14px; font-weight: 700; padding: 5px;">E-mail id :</p>
+        </div>
+    </div>
+    <div class="Cast">                
+        <div class="box2" style="width:215px;">
+            <p style="font-size:14px; font-weight: 700;">
+             <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 4px; border-radius: 0px; line-height: normal;">
+         </p>
+     </div>
+ </div>    
+</div>
+<!-- ============================================================================================ -->
+
+<div class="row" style="padding:0px 0px 0px 47px;">                  
+    <div class="Category" >                
+        <div class="box2" style="width:215px;">
+            <p style="font-size:13px; font-weight: 700; padding:3px;">Category (वर्ग):SC/ST/OBC/NT/GEN</p>
+        </div>
+    </div>
+    <div class="Category">                
+        <div class="box2" style="width:215px;">
+            <p style="font-size:13px; font-weight: 700; padding:5px;">Hobbies :</p>
+        </div>
+    </div>
+    <div class="Category">                
+        <div class="box2" style="width:215px;">
+            <p style="font-size:13px; font-weight: 700;">
+             <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 4px; border-radius: 0px; line-height: normal;">
+         </p>
+     </div>
+ </div>    
+</div>
+
+<div class="Marks" style="padding:0px 0px 0px 32px;">                
+    <div class="indif" style="width:645px; height: 40px; border:1px solid black;">
+        <p style="font-size:15px; font-weight: 700; padding: 5px;">Identification Marks : 1.<br>2.</p>
+    </div>
+</div>  
+
+<!-- ==============================Forth Table============================================== -->
+
+
+<!-- <div><p style="font-size:15px; font-weight:500; text-align: center; padding-top: 5px;">Family Background:</p></div> -->
+
+<div class="Marks" style="padding:0px 0px 0px 32px;">                
+    <div class="indif" style="width:645px; height: 25px; border:1px solid black;">
+        <p style="font-size:15px; font-weight: 700; padding: 5px;">Family Member Details</p>
+    </div>
+</div> 
+
+<div class="row" style="padding:0px 0px 0px 47px;">                  
+    <div class="Member " >                
+        <div class="Details" style="width:129px; height: 40px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; padding:5px;">Total No. of Members<br> कुल सदस्य</p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:129px; height: 40px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; padding:5px;">No. of Male<br>पुरुषों की संख्या</p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:129px; height: 40px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; padding: 5px;">No. of Female<br>महिलाओं की संख्या</p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:129px; height: 40px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; padding: 5px;">No. of Employed<br>कुल कार्यरत</p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:129px; height: 40px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; padding: 5px;">No. of Unemployed<br>कुल बेरोजगार</p>
+        </div>
+    </div>    
+</div>
+<!-- ======================================================================================================= -->
+
+<div class="row" style="padding:0px 0px 0px 47px;">                  
+    <div class="Family" >                
+        <div class="box2" style="width:130px;">
+            <p style="font-size:12px; font-weight: 700; ">
+             <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+         </p>
+     </div>
+ </div>
+ <div class="Family" >                
+    <div class="box2" style="width:128px;">
+        <p style="font-size:12px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Family" >                
+    <div class="box2" style="width:129px;">
+        <p style="font-size:12px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Family" >                
+    <div class="box2" style="width:129px;">
+        <p style="font-size:12px; font-weight: 700;">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Family" >                
+    <div class="box2" style="width:129px;">
+        <p style="font-size:12px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+</div>
+
+
+
+
+<!-- ========================================================== -->
+
+<!-- ===============================Five Table Start==================================== -->
+
+
+
+
+<!-- =================================Six Table Start========================================== -->
+
+
+
+
+<div class="backg" style="padding: 0px 0px 0px 32px;">                
+    <div class="indif" style="width:645px; height: 25px; border:1px solid black;">
+        <p style="font-size:15px; font-weight: 700; padding: 5px;">Family Background</p>
+    </div>
+</div> 
+
+<div class="row" style="padding:0px 0px 0px 47px;">                  
+    <div class="Member " >                
+        <div class="Details" style="width:107px; height: 70px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; padding:5px;">Name of Brother(s)<br>भाई का नाम</p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:107px; height: 70px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; padding:5px;">Occupation<br>पेशा</p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:107px; height: 70px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; padding: 5px;">Name of Sister(S)<br>बहन का नाम</p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:107px; height: 70px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; padding: 5px;">Occupation<br>पेशा </p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:107px; height: 70px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; padding: 5px;">Father <br>Occupation<br>पिता का  पेशा </p>
+        </div>
+    </div> 
+    <div class="Member ">                
+        <div class="Details" style="width:110px; height: 70px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; padding: 5px;">Mother <br>Occupation<br>माता का  पेशा</p>
+        </div>
+    </div>     
+</div>
+
+
+<div class="row" style="padding:0px 0px 0px 47px;">                  
+    <div class="Family" >                
+        <div class="box2" style="width:107px;">
+            <p style="font-size:12px; font-weight: 700;">
+             <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+         </p>
+     </div>
+ </div>
+ <div class="Family" >                
+    <div class="box2" style="width:107px;">
+        <p style="font-size:12px; font-weight: 700;">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Family" >                
+    <div class="box2" style="width:107px;">
+        <p style="font-size:12px; font-weight: 700;">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Family" >                
+    <div class="box2" style="width:107px;">
+        <p style="font-size:12px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Family" >                
+    <div class="box2" style="width:107px;">
+        <p style="font-size:12px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Family" >                
+    <div class="box2" style="width:110px;">
+        <p style="font-size:12px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+</div>
+
+
+
+<div class="row" style="padding:0px 0px 0px 47px;">                  
+    <div class="Family" >                
+     <div class="Own Land" style="width:107px; height: 40px; border:1px solid black;">
+        <p style="font-size:12px; font-weight: 500; padding: 0px 0px 0px 5px;"></p>
+    </div>
+</div>
+<div class="Family" >                
+    <div class="Own Land" style="width:107px; height: 40px; border:1px solid black;">
+        <p style="font-size:12px; font-weight: 500; padding: 0px 0px 0px 5px;"></p>
+    </div>
+</div>
+<div class="Family" >                
+ <div class="Own Land" style="width:107px; height: 40px; border:1px solid black;">
+    <p style="font-size:12px; font-weight: 500; padding: 0px 0px 0px 5px;"></p>
+</div>
+</div>
+<div class="Family" >                
+ <div class="Own Land" style="width:107px; height: 40px; border:1px solid black;">
+    <p style="font-size:12px; font-weight: 500; padding: 0px 0px 0px 5px;"></p>
+</div>
+</div>
+<div class="Family" >                
+    <div class="Own Land" style="width:107px; height: 40px; border:1px solid black;">
+        <p style="font-size:12px; font-weight: 700; padding:5px;">Own Land <br>(In Acres)</p>
+    </div>
+</div>
+<div class="Family" >                
+    <div class="Own Land" style="width:110px; height: 40px; border:1px solid black;">
+        <p style="font-size:12px; font-weight: 700; padding:5px;">Family <br>Income/Annum</p>
+    </div>
+</div>
+</div>
+
+<div class="row" style="padding:0px 0px 0px 47px;">                  
+    <div class="Family" >                
+     <div class="khud" style="width:107px; height: 40px; border:1px solid black;">
+        <p style="font-size:12px; font-weight: 500; padding: 0px 0px 0px 5px;"></p>
+    </div>
+</div>
+<div class="Family" >                
+    <div class="khud" style="width:107px; height: 40px; border:1px solid black;">
+        <p style="font-size:12px; font-weight: 500; padding: 0px 0px 0px 5px;"></p>
+    </div>
+</div>
+<div class="Family" >                
+ <div class="khud" style="width:107px; height: 40px; border:1px solid black;">
+    <p style="font-size:12px; font-weight: 500; padding: 0px 0px 0px 5px;"></p>
+</div>
+</div>
+<div class="Family" >                
+    <div class="khud" style="width:107px; height: 40px; border:1px solid black;">
+        <p style="font-size:12px; font-weight: 500; padding: 0px 0px 0px 5px;"></p>
+    </div>
+</div>
+<div class="Family" >                
+    <div class="khud" style="width:107px; height: 40px; border:1px solid black;">
+        <p style="font-size:12px; font-weight: 700; padding: 5px;">खुद की जमीन <br>एकड़ में</p>
+    </div>
+</div>
+<div class="Family" >                
+    <div class="khud" style="width:110px;height: 40px; border:1px solid black;">
+        <p style="font-size:12px; font-weight: 700; padding: 5px;">पारिवारिक<br>आय/वार्षिक</p>
+    </div>
+</div>
+</div>
+
+
+<div class="row" style="padding:0px 0px 0px 47px;">                  
+    <div class="Family" >                
+        <div class="box2" style="width:107px;">
+            <p style="font-size:12px; font-weight: 500; padding: 0px 0px 0px 5px;"></p>
+        </div>
+    </div>
+    <div class="Family" >                
+        <div class="box2" style="width:107px;">
+            <p style="font-size:12px; font-weight: 500; padding: 0px 0px 0px 5px;"></p>
+        </div>
+    </div>
+    <div class="Family" >                
+        <div class="box2" style="width:107px;">
+            <p style="font-size:12px; font-weight: 500; padding: 0px 0px 0px 5px;"></p>
+        </div>
+    </div>
+    <div class="Family" >                
+        <div class="box2" style="width:107px;">
+            <p style="font-size:12px; font-weight: 500; padding: 0px 0px 0px 5px;"></p>
+        </div>
+    </div>
+    <div class="Family" >                
+        <div class="box2" style="width:107px;">
+            <p style="font-size:12px; font-weight: 700;">
+             <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+         </p>
+     </div>
+ </div>
+ <div class="Family" >                
+    <div class="box2" style="width:110px;">
+        <p style="font-size:12px; font-weight: 700;">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+</div>
+<div style="padding-bottom: 30px;"></div>
+
+
+<!-- =================================================================================== -->
+
+
+
+<div class="row" style="padding:0px 0px 0px 15px;"> 
+</div>
+
+<!-- ===============================================================         -->
+
+
+<!-- form section End -->
+</div>
+</section>
+
+<!-- ============================Second Section Start====================================== -->
+
+
+
+
+<section>
+    <div class="container bg-white">
+
+        <div class="Marks" style="padding:40px 0px 0px 32px;">                
+            <div class="indif" style="width:645px; height: 25px; border:1px solid black;">
+                <p style="font-size:15px; font-weight: 700; text-align: center;"><i>Financial Information</i></p>
+            </div>
+        </div> 
+
+        <div class="row" style="padding:0px 0px 0px 47px;">                  
+            <div class="Member " >                
+                <div class="Details" style="width:215px; height: 40px; border:1px solid black;">
+                    <p style="font-size:14px; font-weight: 700; padding:1px;">Family Income per Year <br>(In Rupees)</p>
+                </div>
+            </div>
+            <div class="Member ">                
+                <div class="Details" style="width:215px; height: 40px; border:1px solid black;">
+                    <p style="font-size:14px; font-weight: 700; padding:5px;">Father’s Occupation</p>
+                </div>
+            </div>
+            <div class="Member ">                
+                <div class="Details" style="width:215px; height: 40px; border:1px solid black;">
+                    <p style="font-size:14px; font-weight: 700; padding:5px;">Land: &nbsp; &nbsp; &nbsp;<input type="checkbox" class="form-check-input" style="width:20px; height:20px; "> &nbsp;Owned &nbsp; &nbsp; &nbsp; <input type="checkbox" class="form-check-input" style="width:20px; height:20px; ">&nbsp; Rented   </p>
+                </div>
+            </div>            
+        </div>
+
+        <!-- ===================================================================================== -->
+
+        <div class="row" style="padding:0px 0px 0px 47px;">                  
+            <div class="Family" >                
+                <div class="Less " style="width:215px; height: 30px; border:1px solid black;">
+                    <p style="font-size:12px; font-weight: 700; padding:5px 0px 0px 50px;">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" style="transform: scale(1.5);">
+                        <label class="form-check-label" for="exampleCheck1" style="font-size: 14px; font-weight: 700;">Less than 20,000</label>
+                    </p>
+                </div>
+            </div>
+            <div class="Family" >                
+                <div class="Less " style="width:215px; height: 30px; border:1px solid black;">
+                    <p style="font-size:12px; font-weight: 700; padding:5px 0px 0px 50px;">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" style="transform: scale(1.5);">
+                        <label class="form-check-label" for="exampleCheck1" style="font-size: 14px; font-weight: 700;">Driver</label>
+                    </p>
+                </div>
+            </div>
+            <div class="Family" >                
+                <div class="Less " style="width:215px; height: 30px; border:1px solid black;">
+                    <p style="font-size:12px; font-weight: 700; padding:5px 0px 0px 50px;">
+                       <input type="checkbox" class="form-check-input" id="exampleCheck1" style="transform: scale(1.5);">
+                       <label class="form-check-label" for="exampleCheck1" style="font-size: 14px; font-weight: 700;">Less than 1 Acre</label>
+                   </p>  
+               </div>
+           </div>
+       </div>
+
+       <!-- ======================================================================================== -->
+
+
+
+       <div class="row" style="padding:0px 0px 0px 47px;">                  
+        <div class="Family" >                
+            <div class="Less " style="width:215px; height: 30px; border:1px solid black;">
+                <p style="font-size:12px; font-weight: 700; padding:5px 0px 0px 50px;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" style="transform: scale(1.5);">
+                    <label class="form-check-label" for="exampleCheck1" style="font-size: 14px; font-weight: 700;">20,001 – 35,000</label>
+                </p>
+            </div>
+        </div>
+        <div class="Family" >                
+            <div class="Less " style="width:215px; height: 30px; border:1px solid black;">
+                <p style="font-size:12px; font-weight: 700; padding:5px 0px 0px 50px;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" style="transform: scale(1.5);">
+                    <label class="form-check-label" for="exampleCheck1" style="font-size: 14px; font-weight: 700;">Teacher</label>
+                </p>
+            </div>
+        </div>
+        <div class="Family" >                
+            <div class="Less " style="width:215px; height: 30px; border:1px solid black;">
+                <p style="font-size:12px; font-weight: 700; padding:5px 0px 0px 50px;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" style="transform: scale(1.5);">
+                    <label class="form-check-label" for="exampleCheck1" style="font-size: 14px; font-weight: 700;">1 – 2 Acres</label>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================================================================= -->
+
+
+    <div class="row" style="padding:0px 0px 0px 47px;">                  
+        <div class="Family" >                
+            <div class="Less " style="width:215px; height: 30px; border:1px solid black;">
+                <p style="font-size:12px; font-weight: 700; padding:5px 0px 0px 50px;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" style="transform: scale(1.5);">
+                    <label class="form-check-label" for="exampleCheck1" style="font-size: 14px; font-weight: 700;">35,001 – 50,000</label>
+                </p>
+            </div>
+        </div>
+        <div class="Family" >                
+            <div class="Less " style="width:215px; height: 30px; border:1px solid black;">
+                <p style="font-size:12px; font-weight: 700; padding:5px 0px 0px 50px;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" style="transform: scale(1.5);">
+                    <label class="form-check-label" for="exampleCheck1" style="font-size: 14px; font-weight: 700;">Daily Wage Worker </label>
+                </p>
+            </div>
+        </div>
+        <div class="Family" >                
+            <div class="Less " style="width:215px; height: 30px; border:1px solid black;">
+                <p style="font-size:12px; font-weight: 700; padding:5px 0px 0px 50px;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" style="transform: scale(1.5);">
+                    <label class="form-check-label" for="exampleCheck1" style="font-size: 14px; font-weight: 700;">2 – 3 Acres</label>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================================================================== -->
+    <div class="row" style="padding:0px 0px 0px 47px;">                  
+        <div class="Family" >                
+            <div class="Less " style="width:215px; height: 30px; border:1px solid black;">
+                <p style="font-size:12px; font-weight: 700; padding:5px 0px 0px 50px;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" style="transform: scale(1.5);">
+                    <label class="form-check-label" for="exampleCheck1" style="font-size: 14px; font-weight: 700;">50,001 – 65,000</label>
+                </p>
+            </div>
+        </div>
+        <div class="Family" >                
+            <div class="Less " style="width:215px; height: 30px; border:1px solid black;">
+                <p style="font-size:12px; font-weight: 700; padding:5px 0px 0px 50px;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" style="transform: scale(1.5);">
+                    <label class="form-check-label" for="exampleCheck1" style="font-size: 14px; font-weight: 700;">Tailor </label>
+                </p>
+            </div>
+        </div>
+        <div class="Family" >                
+            <div class="Less " style="width:215px; height: 30px; border:1px solid black;">
+                <p style="font-size:12px; font-weight: 700; padding:5px 0px 0px 50px;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" style="transform: scale(1.5);">
+                    <label class="form-check-label" for="exampleCheck1" style="font-size: 14px; font-weight: 700;">3 – 4 Acres</label>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================================================ -->
+    <div class="row" style="padding:0px 0px 0px 47px;">                  
+        <div class="Family" >                
+            <div class="Less " style="width:215px; height: 30px; border:1px solid black;">
+                <p style="font-size:12px; font-weight: 700; padding:5px 0px 0px 50px;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" style="transform: scale(1.5);">
+                    <label class="form-check-label" for="exampleCheck1" style="font-size: 14px; font-weight: 700;">65,001 – 80,000</label>
+                </p>
+            </div>
+        </div>
+        <div class="Family" >                
+            <div class="Less " style="width:215px; height: 30px; border:1px solid black;">
+                <p style="font-size:12px; font-weight: 700; padding:5px 0px 0px 50px;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" style="transform: scale(1.5);">
+                    <label class="form-check-label" for="exampleCheck1" style="font-size: 14px; font-weight: 700;">Mechanic </label>
+                </p>
+            </div>
+        </div>
+        <div class="Family" >                
+            <div class="Less " style="width:215px; height: 30px; border:1px solid black;">
+                <p style="font-size:12px; font-weight: 700; padding:5px 0px 0px 50px;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" style="transform: scale(1.5);">
+                    <label class="form-check-label" for="exampleCheck1" style="font-size: 14px; font-weight: 700;">4 – 5 Acres</label>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================================================== -->
+    <div class="row" style="padding:0px 0px 0px 47px;">                  
+        <div class="Family" >                
+            <div class="Less " style="width:215px; height: 30px; border:1px solid black;">
+                <p style="font-size:12px; font-weight: 700; padding:5px 0px 0px 50px;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" style="transform: scale(1.5);">
+                    <label class="form-check-label" for="exampleCheck1" style="font-size: 14px; font-weight: 700;">More than 80,000</label>
+                </p>
+            </div>
+        </div>
+        <div class="Family" >                
+            <div class="Less " style="width:215px; height: 30px; border:1px solid black;">
+                <p style="font-size:12px; font-weight: 700; padding:5px 0px 0px 50px;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" style="transform: scale(1.5);">
+                    <label class="form-check-label" for="exampleCheck1" style="font-size: 14px; font-weight: 700;">Others ............</label>
+                </p>
+            </div>
+        </div>
+        <div class="Family" >                
+            <div class="Less " style="width:215px; height: 30px; border:1px solid black;">
+                <p style="font-size:12px; font-weight: 700; padding:5px 0px 0px 50px;">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" style="transform: scale(1.5);">
+                    <label class="form-check-label" for="exampleCheck1" style="font-size: 14px; font-weight: 700;">More than 5 Acres</label>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================Educational Qualification===================================== -->
+
+
+    <div class="backg" style="padding: 0px 0px 0px 32px;">                
+        <div class="indif" style="width:645px; height: 25px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; text-align: center;">Educational Qualification</p>
+        </div>
+    </div> 
+
+    <!-- =================================================================== -->
+
+    <div class="row" style="padding:0px 0px 0px 47px;">                  
+        <div class="Member " >                
+            <div class="Details" style="width:90px; height: 70px; border:1px solid black; padding: 0px;">
+                <p style="font-size:14px; font-weight: 700; padding:5px;">Examination <br>Passed</p>
+            </div>
+        </div>
+        <div class="Member ">                
+            <div class="Details" style="width:140px; height: 70px; border:1px solid black; padding: 10px;">
+                <p style="font-size:14px; font-weight: 700; ">Name of School/College</p>
+            </div>
+        </div>
+        <div class="Member ">                
+            <div class="Details" style="width:74px; height: 70px; border:1px solid black;">
+                <p style="font-size:14px; font-weight: 700; padding: 5px;">Board University</p>
+            </div>
+        </div>
+        <div class="Member ">                
+            <div class="Details" style="width:69px; height: 70px; border:1px solid black;">
+                <p style="font-size:14px; font-weight: 700; padding: 5px;">Year of<br>Passing </p>
+            </div>
+        </div>
+        <div class="Member ">                
+            <div class="Details" style="width:65px; height: 70px; border:1px solid black;">
+                <p style="font-size:14px; font-weight: 700; padding: 5px;">Total <br>Marks<br>Obtained </p>
+            </div>
+        </div> 
+        <div class="Member ">                
+            <div class="Details" style="width:69px; height: 70px; border:1px solid black;">
+                <p style="font-size:14px; font-weight: 700; padding: 5px;">Max <br>Marks</p>
+            </div>
+        </div>
+        <div class="Member ">                
+            <div class="Details" style="width:69px; height: 70px; border:1px solid black;">
+                <p style="font-size:14px; font-weight: 700; padding: 5px;">Percent <br>age</p>
+            </div>
+        </div>
+        <div class="Member ">                
+            <div class="Details" style="width:69px; height: 70px; border:1px solid black;">
+                <p style="font-size:14px; font-weight: 700; padding: 5px;">Regular/<br>Private/<br>Open</p>
+            </div>
+        </div>       
+    </div>
+
+
+
+    <!-- ================================================================================= -->
+
+    <div class="row" style="padding:0px 0px 0px 47px;">                  
+        <div class="Member " >                
+            <div class="Details" style="width:90px; height: 50px; border:1px solid black; padding: 0px;">
+                <p style="font-size:14px; font-weight: 700; padding:5px;">High  <br>School(10<sup>th</sup>)</p>
+            </div>
+        </div>
+        <div class="Member ">                
+            <div class="Details" style="width:140px; height: 50px; border:1px solid black; ">
+                <p style="font-size:12px; font-weight: 700;">
+                    <input type="text" name="" style="width: 100%; border: none; height:auto; padding:16px; border-radius: 0px; line-height: normal;">
+                </p>
+            </div>
+        </div>
+        <div class="Member ">                
+            <div class="Details" style="width:74px; height: 50px; border:1px solid black;">
+                <p style="font-size:14px; font-weight: 700; ">
+                    <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;">
+                </p>
+            </div>
+        </div>
+        <div class="Member ">                
+            <div class="Details" style="width:69px; height: 50px; border:1px solid black;">
+                <p style="font-size:14px; font-weight: 700; "> <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;"> </p>
+            </div>
+        </div>
+        <div class="Member ">                
+            <div class="Details" style="width:65px; height: 50px; border:1px solid black;">
+                <p style="font-size:14px; font-weight: 700;">
+                    <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;">
+                </p>
+            </div>
+        </div> 
+        <div class="Member ">                
+            <div class="Details" style="width:69px; height: 50px; border:1px solid black;">
+                <p style="font-size:14px; font-weight: 700;">
+                    <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;">
+                </p>
+            </div>
+        </div>
+        <div class="Member ">                
+            <div class="Details" style="width:69px; height: 50px; border:1px solid black;">
+                <p style="font-size:14px; font-weight: 700; ">
+                    <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;">
+                </p>
+            </div>
+        </div>
+        <div class="Member ">                
+            <div class="Details" style="width:69px; height: 50px; border:1px solid black;">
+                <p style="font-size:14px; font-weight: 700; ">
+                   <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;"> 
+               </p>
+           </div>
+       </div>       
+   </div>
+
+   <!-- ============================================================================== -->
+
+
+   <div class="row" style="padding:0px 0px 0px 47px;">                  
+    <div class="Member " >                
+        <div class="Details" style="width:90px; height: 50px; border:1px solid black; padding: 0px;">
+            <p style="font-size:14px; font-weight: 700; padding:5px;">Intermediate<br>(12<sup>th</sup>)</p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:140px; height: 50px; border:1px solid black; ">
+            <p style="font-size:14px; font-weight: 700; ">
+                <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;">
+            </p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:74px; height: 50px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700;">
+                <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;">
+            </p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:69px; height: 50px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; ">
+             <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;">
+         </p>
+     </div>
+ </div>
+ <div class="Member ">                
+    <div class="Details" style="width:65px; height: 50px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700;">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div> 
+<div class="Member ">                
+    <div class="Details" style="width:69px; height: 50px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Member ">                
+    <div class="Details" style="width:69px; height: 50px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Member ">                
+    <div class="Details" style="width:69px; height: 50px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>       
+</div>
+<!-- =================================================================================     -->
+
+
+<div class="row" style="padding:0px 0px 0px 47px;">                  
+    <div class="Member " >                
+        <div class="Details" style="width:90px; height: 50px; border:1px solid black; padding: 0px;">
+            <p style="font-size:14px; font-weight: 700; padding:5px;">B.A/ B.SC/ <br>B.COM</p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:140px; height: 50px; border:1px solid black; ">
+            <p style="font-size:14px; font-weight: 700; ">
+                <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;">
+            </p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:74px; height: 50px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; ">
+             <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;">
+         </p>
+     </div>
+ </div>
+ <div class="Member ">                
+    <div class="Details" style="width:69px; height: 50px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700;"> 
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Member ">                
+    <div class="Details" style="width:65px; height: 50px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div> 
+<div class="Member ">                
+    <div class="Details" style="width:69px; height: 50px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Member ">                
+    <div class="Details" style="width:69px; height: 50px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Member ">                
+    <div class="Details" style="width:69px; height: 50px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:15px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>       
+</div>
+
+<!-- ============================================================================ -->
+
+
+
+
+
+
+<div class="row" style="padding:0px 0px 0px 47px;">                  
+    <div class="Member " >                
+        <div class="Details" style="width:90px; height: 30px; border:1px solid black; padding: 0px;">
+            <p style="font-size:14px; font-weight: 700; padding:5px;">Other</p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:140px; height: 30px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; ">
+                <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+            </p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:74px; height: 30px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700;">
+             <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+         </p>
+     </div>
+ </div>
+ <div class="Member ">                
+    <div class="Details" style="width:69px; height: 30px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700;"> 
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Member ">                
+    <div class="Details" style="width:65px; height: 30px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div> 
+<div class="Member ">                
+    <div class="Details" style="width:69px; height: 30px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Member ">                
+    <div class="Details" style="width:69px; height: 30px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Member ">                
+    <div class="Details" style="width:69px; height: 30px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700;">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>       
+</div>
+
+<!-- ===================================Experience================================= -->
+
+<div class="backg" style="padding: 0px 0px 0px 32px;">                
+    <div class="indif" style="width:645px; height: 25px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; text-align: center;">Experience</p>
+    </div>
+</div>
+
+
+<!-- ================================================================================ -->
+<div class="row" style="padding:0px 0px 0px 47px;">                  
+    <div class="Member " >                
+        <div class="Details" style="width:50px; height: 55px; border:1px solid black; padding: 0px;">
+            <p style="font-size:14px; font-weight: 700; padding:5px;">Sr.  <br>No.</p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:100px; height: 55px; border:1px solid black; padding: 10px;">
+            <p style="font-size:14px; font-weight: 700; ">Name of Company</p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:70px; height: 55px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; padding: 5px;">From</p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:65px; height: 55px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; padding: 5px;">To</p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:90px; height: 55px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; padding: 5px;">Salary/  <br>Wages Rs.</p>
+        </div>
+    </div> 
+    <div class="Member ">                
+        <div class="Details" style="width:90px; height: 55px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; padding: 5px;">Post/  <br>Designation</p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:90px; height: 55px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; padding: 5px;">Reason for <br>separation</p>
+        </div>
+    </div>
+    <div class="Member ">                
+        <div class="Details" style="width:90px; height: 55px; border:1px solid black;">
+            <p style="font-size:14px; font-weight: 700; padding: 5px;">Certificate <br>Yes/ No</p>
+        </div>
+    </div>       
+</div> 
+
+<!-- =========================================================================================== -->
+
+<div class="row" style="padding:0px 0px 0px 47px;">                  
+    <div class="Member " >                
+        <div class="Details" style="width:50px; height: 30px; border:1px solid black; padding: 0px;">
+            <p style="font-size:14px; font-weight: 700; ">
+             <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+         </p>
+     </div>
+ </div>
+ <div class="Member ">                
+    <div class="Details" style="width:100px; height: 30px; border:1px solid black; ">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Member ">                
+    <div class="Details" style="width:70px; height: 30px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Member ">                
+    <div class="Details" style="width:65px; height: 30px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Member ">                
+    <div class="Details" style="width:90px; height: 30px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700;">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div> 
+<div class="Member ">                
+    <div class="Details" style="width:90px; height: 30px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Member ">                
+    <div class="Details" style="width:90px; height: 30px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700;">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Member ">                
+    <div class="Details" style="width:90px; height: 30px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>       
+</div>
+
+<!-- =========================================================================== -->
+
+<div class="row" style="padding:0px 0px 0px 47px;">                  
+    <div class="Member " >                
+        <div class="Details" style="width:50px; height: 30px; border:1px solid black; padding: 0px;">
+            <p style="font-size:14px; font-weight: 700; ">
+             <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+         </p>
+     </div>
+ </div>
+ <div class="Member ">                
+    <div class="Details" style="width:100px; height: 30px; border:1px solid black; ">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Member ">                
+    <div class="Details" style="width:70px; height: 30px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700;">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Member ">                
+    <div class="Details" style="width:65px; height: 30px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Member ">                
+    <div class="Details" style="width:90px; height: 30px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div> 
+<div class="Member ">                
+    <div class="Details" style="width:90px; height: 30px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Member ">                
+    <div class="Details" style="width:90px; height: 30px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>
+<div class="Member ">                
+    <div class="Details" style="width:90px; height: 30px; border:1px solid black;">
+        <p style="font-size:14px; font-weight: 700; ">
+         <input type="text" name="" style="width: 100%; border: none; height:auto; padding:5px; border-radius: 0px; line-height: normal;">
+     </p>
+ </div>
+</div>       
+</div>
+<!-- =============================================Experience End=========================== -->
+
+<!-- ==================================अन्य सुचना Start========================= -->
+
+<div class="row"style="padding:15px 0px 0px 32px;">
+    <div class="col-sm-8">
+        <p>अन्य सुचना (जवाब पर सही का निशान (✔) लगाए)</p>
+        <p style="font-size:14px;">1.   क्या कभी आपके ऊपर किसी भी कारण से कानूनी कार्रवाई हुई है या चल रही है</p>
+        <p  style="font-size:14px; ">2.   क्या कभी आपके ऊपर किसी भी कारण से कानूनी कार्रवाई हुई है या चल रही है</p>
+        <p style="font-size:14px; line-height: 2px;">3.   क्या आप शारीरिक रूप से विकलांग हैं?</p>
+        <p style="font-size:14px;">4.   क्या आप कभी किसी गंभीर संक्रामक रोग से पीड़ित हुए हैं?<br>यदि हाँ, तो इनमें से कौन सा? :  I. TB<br><span style="padding:0px 0px 0px 160px;">II.   HIV</span><br><span style="padding:0px 0px 0px 160px;">III. OTHERS</span>     </p>
+
+    </div>
+    <div class="mosthinhi" style="padding-top:40px;">
+        <div class="hind" style="width:87px; height:25px; border:1px solid black;">
+            <p style="font-size:14px; font-weight:700; text-align:center; padding: 2px;">हाँ</p>
+        </div>
+        <div class="hind" style="width:87px; height:25px; border:1px solid black;">
+            <p style="font-size:14px; font-weight:700; text-align:center; padding: 2px;">हाँ</p>
+        </div>
+        <div class="hind" style="width:87px; height:25px; border:1px solid black;">
+            <p style="font-size:14px; font-weight:700; text-align:center; padding: 2px;">हाँ</p>
+        </div>
+        <div class="hind" style="width:87px; height:25px; border:1px solid black;">
+            <p style="font-size:14px; font-weight:700; text-align:center; padding: 2px;">हाँ</p>
+        </div>
+    </div>
+    <div class="mosthindi" style="padding-top:40px;">
+        <div class="hind" style="width:87px; height:25px; border:1px solid black;">
+            <p style="font-size:14px; font-weight:700; text-align:center; padding: 2px;">नहीं</p>
+        </div>
+        <div class="hind" style="width:87px; height:25px; border:1px solid black;">
+            <p style="font-size:14px; font-weight:700; text-align:center; padding: 2px;">नहीं</p>
+        </div>
+        <div class="hind" style="width:87px; height:25px; border:1px solid black;">
+            <p style="font-size:14px; font-weight:700; text-align:center; padding: 2px;">नहीं</p>
+        </div>
+        <div class="hind" style="width:87px; height:25px; border:1px solid black;">
+            <p style="font-size:14px; font-weight:700; text-align:center; padding: 2px;">नहीं</p>
+        </div>
+    </div>
+</div>
+
+<div class="row"style="padding:0px 0px 0px 34px;">
+    <div class="col-sm-8">
+       <p style="font-size:14px; line-height:2px;">5.   क्या आपने कभी सर्जरी करवाई है?</p>
+       <p style="font-size:14px;">  6. क्या आप दौरे/मिर्गी के प्रकोप से पीड़ित हैं?</p>
+       <p style="font-size:14px;">7.   क्या आपने कभी मारुति सुजुकी इंडस्ट्रीज़ लिमिटेड में किसी परीक्षा/साक्षात्कार (Interview) में भाग लिया है? यदि हां, तो विस्तृत जानकारी दे |</p> 
+   </div>
+   <div class="mosthinhi">
+    <div class="hind" style="width:87px; height:25px; border:1px solid black;">
+        <p style="font-size:14px; font-weight:700; text-align:center; padding: 2px;">हाँ</p>
+    </div>
+    <div class="hind" style="width:87px; height:25px; border:1px solid black;">
+        <p style="font-size:14px; font-weight:700; text-align:center; padding: 2px;">हाँ</p>
+    </div>
+    <div class="hind" style="width:87px; height:25px; border:1px solid black;">
+        <p style="font-size:14px; font-weight:700; text-align:center; padding: 2px;">हाँ</p>
+    </div>               
+</div>
+<div class="mosthinhi">
+    <div class="hind" style="width:87px; height:25px; border:1px solid black;">
+        <p style="font-size:14px; font-weight:700; text-align:center; padding: 2px;">नहीं</p>
+    </div>
+    <div class="hind" style="width:87px; height:25px; border:1px solid black;">
+        <p style="font-size:14px; font-weight:700; text-align:center; padding: 2px;">नहीं</p>
+    </div>
+    <div class="hind" style="width:87px; height:25px; border:1px solid black;">
+        <p style="font-size:14px; font-weight:700; text-align:center; padding: 2px;">नहीं</p>
+    </div>                
+</div>
+</div>
+<!-- ============================================================================================ -->
+
+
+<div class="row"style="padding:0px 0px 0px 45px;">
+    <div class="dot">
+        <p>..........................................................................................................................................................................................</p>
+
+        <p>..........................................................................................................................................................................................</p>
+    </div>
+
+    <div><p>I confirm that the particulars given above are true and complete to the best of my knowledge<br> and belief. If these are found to be false or incomplete, the institution is entitled to cancel my selection and terminate my training. The institution have rights to use above information.</p></div>
+
+    <div><p>मैं पुष्टि करता हूं कि ऊपर दिए गए विवरण मेरी सर्वोत्तम जानकारी और विश्वास के अनुसार सत्य और पूर्ण हैं।<br> अगर यह
+        गलत या अपूर्ण होने पर संस्थान मेरा चयन रद्द करने और मेरा प्रशिक्षण समाप्त करने का हकदार है |<br> संस्था को उपरोक्त जानकारी का उपयोग करने का अधिकार है 
+        </p></div>
+</div>
+
+        <!-- =================================================================================== -->
+
+        <div class="row" style="padding:0px 0px 0px 47px; padding-bottom: 50px;" >                  
+            <div class="Family" >                
+                <div class="box2" style="width:107px;">
+                    <p style="font-size:14px; font-weight: 700; padding: 3px; text-align: center;">Date</p>
+                </div>
+            </div>
+            <div class="Family" >                
+                <div class="box2" style="width:107px;">
+                    <p style="font-size:12px; font-weight: 700; ">
+                        <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 3px; border-radius: 0px; line-height: normal;">
+                    </p>
+                </div>
+            </div>
+            <div class="Family" >                
+                <div class="box2" style="width:107px;">
+                    <p style="font-size:14px; font-weight: 700; padding: 3px; text-align: center;">Place</p>
+                </div>
+            </div>
+            <div class="Family" >                
+                <div class="box2" style="width:107px;">
+                    <p style="font-size:12px; font-weight: 500;">
+                        <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 3px; border-radius: 0px; line-height: normal;">
+                    </p>
+                </div>
+            </div>
+            <div class="Family" >                
+                <div class="box2" style="width:107px;">
+                    <p style="font-size:12px; font-weight: 700;">
+                      Sign of Candidate
+                   </p>
+               </div>
+           </div>
+           <div class="Family" >                
+            <div class="box2" style="width:110px;">
+                <p style="font-size:12px; font-weight: 700;">
+                   <input type="text" name="" style="width: 100%; border: none; height:auto; padding: 3px; border-radius: 0px; line-height: normal;">
+               </p>
+           </div>
+       </div>
+   </div>
+</div>
+</section>
+
+</body>
+</html>
